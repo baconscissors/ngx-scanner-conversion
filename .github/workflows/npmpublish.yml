@@ -65,6 +65,6 @@ jobs:
           node-version: 22
           registry-url: https://registry.npmjs.org/
 
-      - run: npm publish ./pack-artifact/package.tgz --access public
+      - run: npm publish ./package.tgz --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
