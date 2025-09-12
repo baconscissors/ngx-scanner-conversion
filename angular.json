@@ -132,25 +132,6 @@
           }
         }
       }
-    },
-    "zxing-scanner-demo-e2e": {
-      "root": "projects/zxing-scanner-demo-e2e/",
-      "projectType": "application",
-      "prefix": "",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "projects/zxing-scanner-demo-e2e/protractor.conf.js",
-            "devServerTarget": "zxing-scanner-demo:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "zxing-scanner-demo:serve:production"
-            }
-          }
-        }
-      }
     }
   },
   "cli": {
