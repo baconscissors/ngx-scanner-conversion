@@ -4,11 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { ZXingScannerComponent } from './zxing-scanner.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule
-  ],
-  declarations: [ZXingScannerComponent],
-  exports: [ZXingScannerComponent],
+    imports: [
+        CommonModule,
+        FormsModule,
+        ZXingScannerComponent
+    ],
+    exports: [ZXingScannerComponent],
 })
 export class ZXingScannerModule { }

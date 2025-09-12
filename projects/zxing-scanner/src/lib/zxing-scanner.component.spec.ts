@@ -8,8 +8,8 @@ describe('ZXingScannerComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ZXingScannerComponent ]
-    })
+    imports: [ZXingScannerComponent]
+})
     .compileComponents();
   }));
 

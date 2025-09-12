@@ -12,13 +12,12 @@ describe('AppInfoDialogComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed
       .configureTestingModule({
-        declarations: [AppInfoDialogComponent, AppInfoComponent],
-        imports: [AppUiModule],
-        providers: [
-          { provide: MAT_DIALOG_DATA, useValue: {} },
-          { provide: MatDialogRef, useValue: {} }
-        ]
-      })
+    imports: [AppUiModule, AppInfoDialogComponent, AppInfoComponent],
+    providers: [
+        { provide: MAT_DIALOG_DATA, useValue: {} },
+        { provide: MatDialogRef, useValue: {} }
+    ]
+})
       .compileComponents();
   }));
 

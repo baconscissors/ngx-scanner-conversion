@@ -16,8 +16,9 @@ import { FormatsDialogComponent } from './formats-dialog/formats-dialog.componen
         ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
         // Local
         AppUiModule,
+        FormatsDialogComponent, AppInfoComponent, AppInfoDialogComponent,
     ],
-    declarations: [AppComponent, FormatsDialogComponent, AppInfoComponent, AppInfoDialogComponent],
+    declarations: [AppComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

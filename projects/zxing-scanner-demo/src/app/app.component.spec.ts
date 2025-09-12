@@ -8,9 +8,9 @@ describe('AppComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed
       .configureTestingModule({
-        imports: [AppUiModule],
-        declarations: [AppComponent],
-      })
+    imports: [AppUiModule],
+    declarations: [AppComponent],
+})
       .compileComponents();
   }));
 

@@ -25,8 +25,7 @@ import { ResultAndError } from './ResultAndError';
     selector: 'zxing-scanner',
     templateUrl: './zxing-scanner.component.html',
     styleUrls: ['./zxing-scanner.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: false
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ZXingScannerComponent implements OnInit, OnDestroy {
 
