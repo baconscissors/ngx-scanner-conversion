@@ -1,15 +1,23 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatFormFieldModule}  from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule}  from '@angular/material/input'
+import {MatSelectModule} from '@angular/material/select';
 import { BarcodeFormat } from '@zxing/library';
+import { ZXingScannerComponent } from './public_api';
 import { BehaviorSubject } from 'rxjs';
 import { FormatsDialogComponent } from './formats-dialog/formats-dialog.component';
 import { AppInfoDialogComponent } from './app-info-dialog/app-info-dialog.component';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
     selector: 'app-root',
     templateUrl: 'app.component.html',
     styleUrls: ['./app.component.scss'],
-    standalone: false
+    imports: [AsyncPipe, MatListModule, MatMenuModule, MatFormFieldModule, MatIconModule, MatInputModule, MatSelectModule, ZXingScannerComponent]
 })
 export class AppComponent {
 

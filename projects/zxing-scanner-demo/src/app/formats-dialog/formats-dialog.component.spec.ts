@@ -11,13 +11,12 @@ describe('FormatsDialogComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed
       .configureTestingModule({
-        declarations: [FormatsDialogComponent],
-        imports: [AppUiModule],
-        providers: [
-          { provide: MAT_DIALOG_DATA, useValue: {} },
-          { provide: MatDialogRef, useValue: {} }
-        ]
-      })
+    imports: [AppUiModule, FormatsDialogComponent],
+    providers: [
+        { provide: MAT_DIALOG_DATA, useValue: {} },
+        { provide: MatDialogRef, useValue: {} }
+    ]
+})
       .compileComponents();
   }));
 

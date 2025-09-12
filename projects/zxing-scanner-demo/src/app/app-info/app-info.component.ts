@@ -4,8 +4,7 @@ import { Component, Input, VERSION, ChangeDetectionStrategy } from '@angular/cor
     selector: 'app-info',
     templateUrl: './app-info.component.html',
     styleUrls: ['./app-info.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: false
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppInfoComponent {
 

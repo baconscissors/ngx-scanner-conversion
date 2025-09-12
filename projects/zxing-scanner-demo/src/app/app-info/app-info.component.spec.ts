@@ -10,9 +10,8 @@ describe('AppInfoComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed
       .configureTestingModule({
-        declarations: [AppInfoComponent],
-        imports: [AppUiModule],
-      })
+    imports: [AppUiModule, AppInfoComponent],
+})
       .compileComponents();
   }));
 

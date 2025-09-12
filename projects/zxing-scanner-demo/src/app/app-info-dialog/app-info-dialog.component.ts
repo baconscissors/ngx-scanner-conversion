@@ -1,11 +1,13 @@
 import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogActions, MatDialogClose } from '@angular/material/dialog';
+import { AppInfoComponent } from '../app-info/app-info.component';
+import { MatButton } from '@angular/material/button';
 
 @Component({
     selector: 'app-info-dialog',
     templateUrl: './app-info-dialog.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: false
+    imports: [AppInfoComponent, MatDialogActions, MatButton, MatDialogClose]
 })
 export class AppInfoDialogComponent {
 
